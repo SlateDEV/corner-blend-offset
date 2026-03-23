@@ -1,12 +1,12 @@
 # NURBS corner blend offset for Rhino 3D
 
-Offset 8-CV corner blend NURBS curves with sub-thousandth accuracy using a point projection algorithm. Works in both Grasshopper and standalone Rhino.
+Offset G2/G3 corner blend NURBS curves using a point projection algorithm. Works in both Grasshopper and standalone Rhino.
 
 ## What It Does
 
-Standard curve offset tools (Rhino's `OffsetCrv`, Grasshopper's `Offset Curve`) produce approximations that don't preserve the control vertex structure of the original curve or degrade curve's quality. This tool offsets corner blend curves by projecting each CV through a computed center point onto offset edge lines, preserving the 8-CV NURBS structure and knot vector exactly.
+Standard curve offset tools (Rhino's `OffsetCrv`, Grasshopper's `Offset Curve`) produce precise approximations but don't preserve the control vertex structure of the original curve or degrade curve's quality. This tool offsets corner blend curves by projecting each CV through a computed center point onto offset edge lines, preserving the NURBS structure exactly.
 
-The optimal projection center is found automatically via bisection search. The result is a clean NURBS curve with the same degree, knot structure, and weight distribution as the input — just offset.
+The optimal projection center is found automatically via bisection search. The result is a clean NURBS curve with the same degree, knot structure, and weight distribution as the input, offset by a specified distance.
 
 ### Curve Requirements
 
