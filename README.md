@@ -1,4 +1,4 @@
-# NURBS Curve Offset — Point Projection Method
+# NURBS corner blend offset for Rhino 3D
 
 Offset 8-CV corner blend NURBS curves with sub-thousandth accuracy using a point projection algorithm. Works in both Grasshopper and standalone Rhino.
 
